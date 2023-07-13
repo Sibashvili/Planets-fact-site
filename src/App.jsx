@@ -10,7 +10,9 @@ function App() {
   return (
     <div>
       <Header />
-      <Planets />
+      <Routes>
+        <Route path="/planets/:name" element={<Planets />} />
+      </Routes>
     </div>
   );
 }
