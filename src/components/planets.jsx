@@ -11,26 +11,56 @@ function Planets() {
   const object = data.find(
     (el) => el.name.toLowerCase() === name.toLowerCase()
   );
-  console.log(object);
+
+  const underlineStyle = {
+    height: "4px",
+    marginTop: "17px",
+
+    backgroundColor: object.color,
+  };
   return (
     <div>
       <div className=" text-[#fff] opacity-[0.5] flex justify-between pl-[24px] pr-[24px] mt-[20px]  items-center md:hidden">
         <button
+          style={{
+            borderBottom:
+              active === "overview"
+                ? `4px solid ${object.color}`
+                : "transparent",
+            width: "80px",
+            height: "40px",
+          }}
           onClick={() => setActive("overview")}
-          className={`font-[700] tracking-[1.929px] font-spartan text-[9px] ${
-            active === "overview" ? "underline leading-5" : null
-          }
+          className={`font-[700] tracking-[1.929px] font-spartan text-[9px] w-20 ${
+            active === "overview" ? " text-red-600" : object.color
+          }}
           `}
         >
           OVERWIEV
         </button>
         <button
+          style={{
+            borderBottom:
+              active === "structure"
+                ? `4px solid ${object.color}`
+                : "transparent",
+            width: "80px",
+            height: "40px",
+          }}
           onClick={() => setActive("structure")}
           className="tracking-[1.929px] font-spartan text-[9px]"
         >
           STRUCTURE
         </button>
         <button
+          style={{
+            borderBottom:
+              active === "surface"
+                ? `4px solid ${object.color}`
+                : "transparent",
+            width: "80px",
+            height: "40px",
+          }}
           onClick={() => setActive("surface")}
           className="tracking-[1.929px] font-spartan text-[9px]"
         >
@@ -38,7 +68,7 @@ function Planets() {
         </button>
       </div>
 
-      <div className="w-full h-[1px] bg-[#fff] md:hidden mt-[17px] opacity-[0.20000000298023224]"></div>
+      <div className="w-full h-[1px] bg-[#fff] md:hidden opacity-[0.20000000298023224]"></div>
       <div className=" lg:flex lg:justify-around ">
         <div className="flex justify-center mt-[74px] relative">
           <img
@@ -92,8 +122,12 @@ function Planets() {
           </div>
           <div className=" max-sm:hidden md:flex md:flex-col md:pr-10 md:text-white lg:p-0 lg:mt-10">
             <div
+              style={{
+                backgroundColor:
+                  active === "overview" ? `${object.color}` : "transparent",
+              }}
               onClick={() => setActive("overview")}
-              className=" md:w-[281px] md:h-[40px] border border-whitergba"
+              className={` md:w-[281px] md:h-[40px] border border-whitergba $`}
             >
               <button className="md:flex flex-row-reverse items-center font-spartan">
                 {" "}
@@ -102,6 +136,10 @@ function Planets() {
               </button>
             </div>
             <div
+              style={{
+                backgroundColor:
+                  active === "structure" ? `${object.color}` : "transparent",
+              }}
               onClick={() => setActive("structure")}
               className=" md:w-[281px] md:h-[40px] border border-whitergba md:mt-4 md:text-center"
             >
@@ -112,6 +150,10 @@ function Planets() {
               </button>
             </div>
             <div
+              style={{
+                backgroundColor:
+                  active === "surface" ? `${object.color}` : "transparent",
+              }}
               onClick={() => setActive("surface")}
               className=" md:w-[281px] md:h-[40px] border border-whitergba md:mt-4"
             >
