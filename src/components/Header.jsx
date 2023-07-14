@@ -27,18 +27,29 @@ function Header() {
             alt=""
           />
         </div>
-        <div className=" flex  gap-[33px] justify-center mt-7  opacity-75 font-spartan  pl-12 pr-12 text-[#FFFFFF] max-sm:hidden  ">
+        <div className=" flex  gap-[33px] justify-center   opacity-75 font-spartan  pl-12 pr-12 text-[#FFFFFF] max-sm:hidden  ">
           <div>
             {name.includes("mercury") ? (
               <div
                 style={{
                   backgroundColor: "#419EBB",
-
                   height: "4px",
+                  marginTop: "0px",
+                  paddingBottom: "0px",
                 }}
-                className=" h-1 bg-white  mb-7"
+                className="h-1 bg-white mb-7"
               ></div>
-            ) : null}
+            ) : (
+              <div
+                style={{
+                  backgroundColor: "transparent",
+                  height: "4px",
+                  marginTop: "33px",
+                  paddingBottom: "7px",
+                }}
+                className="h-1 bg-white"
+              ></div>
+            )}
             <Link to="/planets/mercury">MERCURY</Link>
           </div>
           <div>
@@ -46,12 +57,23 @@ function Header() {
               <div
                 style={{
                   backgroundColor: "#F7CC7F",
-
                   height: "4px",
+                  marginTop: "0px",
+                  paddingBottom: "0px",
                 }}
-                className=" h-1 bg-white  mb-7"
+                className="h-1 bg-white mb-7"
               ></div>
-            ) : null}
+            ) : (
+              <div
+                style={{
+                  backgroundColor: "transparent",
+                  height: "4px",
+                  marginTop: "33px",
+                  paddingBottom: "7px",
+                }}
+                className="h-1 bg-white"
+              ></div>
+            )}
             <Link to="/planets/venus">VENUS</Link>
           </div>
           <div>
@@ -59,12 +81,23 @@ function Header() {
               <div
                 style={{
                   backgroundColor: "#545BFE",
-
                   height: "4px",
+                  marginTop: "0px",
+                  paddingBottom: "0px",
                 }}
-                className=" h-1 bg-white  mb-7"
+                className="h-1 bg-white mb-7"
               ></div>
-            ) : null}
+            ) : (
+              <div
+                style={{
+                  backgroundColor: "transparent",
+                  height: "4px",
+                  marginTop: "33px",
+                  paddingBottom: "7px",
+                }}
+                className="h-1 bg-white"
+              ></div>
+            )}
             <Link to="/planets/earth">EARTH</Link>
           </div>
           <div>
@@ -72,12 +105,23 @@ function Header() {
               <div
                 style={{
                   backgroundColor: "#FF6A45",
-
                   height: "4px",
+                  marginTop: "0px",
+                  paddingBottom: "0px",
                 }}
-                className=" h-1 bg-white  mb-7"
+                className="h-1 bg-white mb-7"
               ></div>
-            ) : null}
+            ) : (
+              <div
+                style={{
+                  backgroundColor: "transparent",
+                  height: "4px",
+                  marginTop: "33px",
+                  paddingBottom: "7px",
+                }}
+                className="h-1 bg-white"
+              ></div>
+            )}
             <Link to="/planets/mars">MARS</Link>
           </div>
           <div>
@@ -85,12 +129,23 @@ function Header() {
               <div
                 style={{
                   backgroundColor: "#ECAD7A",
-
                   height: "4px",
+                  marginTop: "0px",
+                  paddingBottom: "0px",
                 }}
-                className=" h-1 bg-white  mb-7"
+                className="h-1 bg-white mb-7"
               ></div>
-            ) : null}
+            ) : (
+              <div
+                style={{
+                  backgroundColor: "transparent",
+                  height: "4px",
+                  marginTop: "33px",
+                  paddingBottom: "7px",
+                }}
+                className="h-1 bg-white"
+              ></div>
+            )}
             <Link to="/planets/jupiter">JUPITER</Link>
           </div>
           <div>
@@ -98,12 +153,23 @@ function Header() {
               <div
                 style={{
                   backgroundColor: "#FCCB6B",
-
                   height: "4px",
+                  marginTop: "0px",
+                  paddingBottom: "0px",
                 }}
-                className=" h-1 bg-white  mb-7"
+                className="h-1 bg-white mb-7"
               ></div>
-            ) : null}
+            ) : (
+              <div
+                style={{
+                  backgroundColor: "transparent",
+                  height: "4px",
+                  marginTop: "33px",
+                  paddingBottom: "7px",
+                }}
+                className="h-1 bg-white"
+              ></div>
+            )}
             <Link to="/planets/saturn">SATURN</Link>
           </div>
           <div>
@@ -111,12 +177,23 @@ function Header() {
               <div
                 style={{
                   backgroundColor: "#65F0D5",
-
                   height: "4px",
+                  marginTop: "0px",
+                  paddingBottom: "0px",
                 }}
-                className=" h-1 bg-white  mb-7"
+                className="h-1 bg-white mb-7"
               ></div>
-            ) : null}
+            ) : (
+              <div
+                style={{
+                  backgroundColor: "transparent",
+                  height: "4px",
+                  marginTop: "33px",
+                  paddingBottom: "7px",
+                }}
+                className="h-1 bg-white"
+              ></div>
+            )}
             <Link to="/planets/uranus">URANUS</Link>
           </div>
           <div>
@@ -124,12 +201,23 @@ function Header() {
               <div
                 style={{
                   backgroundColor: "#497EFA",
-
                   height: "4px",
+                  marginTop: "0px",
+                  paddingBottom: "0px",
                 }}
-                className=" h-1 bg-white  mb-7"
+                className="h-1 bg-white mb-7"
               ></div>
-            ) : null}
+            ) : (
+              <div
+                style={{
+                  backgroundColor: "transparent",
+                  height: "4px",
+                  marginTop: "33px",
+                  paddingBottom: "7px",
+                }}
+                className="h-1 bg-white"
+              ></div>
+            )}
             <Link to="/planets/neptune">NEPTUNE</Link>
           </div>
         </div>

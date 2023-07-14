@@ -12,12 +12,6 @@ function Planets() {
     (el) => el.name.toLowerCase() === name.toLowerCase()
   );
 
-  const underlineStyle = {
-    height: "4px",
-    marginTop: "17px",
-
-    backgroundColor: object.color,
-  };
   return (
     <div>
       <div className=" text-[#fff] opacity-[0.5] flex justify-between pl-[24px] pr-[24px] mt-[20px]  items-center md:hidden">
